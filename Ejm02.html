@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
     <head>
     </head>
     <body>
@@ -19,12 +18,12 @@
         <script>
             var elemento1 = true;
             var elemento2 = true;
-            document.getElementById("demo").innerHTML = "Los elementos son "+elemento1+","+elemento2;
-            if ((number(elemento1)!=1||number(elemento1)!=0)&&(number(elemento2)!=1||number(elemento2)!=0)) {
-                    document.getElementById("boolean").style.diplay="none";
+            document.getElementById("demo").innerHTML = "Los elementos son "+elemento1+","+elemento2; 
+            if ((number(elemento1) != 1 || number(elemento1) != 0) && (number(elemento2) != 1 || number(elemento2) != 0)) {
+                    document.getElementById("boolean").disabled=true;
                 }
             else{
-                    document.getElementById("int").style.diplay="none";
+                    document.getElementById("int").disabled=true;
             }
             function sumar() {
                 alert(elemento1 + elemento2);
@@ -54,33 +53,5 @@
                 alert((!elemento1)+","+(!elemento2))
             }
         </script>
-=======
-
-    <head>
-    </head>
-    <body>
-        <script>
-            function reducir() {
-                document.getElementById("demo").style.fontSize = "10px";
-                document.getElementById("demo").style.color = "blue";
-            }
-            function agrandar() {
-                document.getElementById("demo").style.fontSize = "40px";
-                document.getElementById("demo").style.color = "red";
-            }
-        </script>
-        <div>
-            <h2 id ="demo"></h2>
-            <button onclick="reducir()">Sumar</button>
-            <button onclick="agrandar()">Restar</button>
-            <button onclick="agrandar()">multiplicar</button>
-            <button onclick="agrandar()">Dividir</button>
-            <button onclick="agrandar()">Potencia</button>
-            <button onclick="agrandar()">Conjuncion</button>
-            <button onclick="agrandar()">Disyuncion</button>
-            <button onclick="agrandar()">Condicional</button>
-
-        </div> 
->>>>>>> 8c44e288c85276bcde1ce0a1c7d29e537d1b66c9
     </body>
 </html>
