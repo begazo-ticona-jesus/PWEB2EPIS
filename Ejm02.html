@@ -1,30 +1,57 @@
 <!DOCTYPE html>
 <html>
-
     <head>
     </head>
     <body>
+        <div>
+            <p id ="demo"></p>
+            <button id="int" onclick="sumar()">Sumar</button>
+            <button id="int" onclick="restar()">Restar</button>
+            <button id="int" onclick="multiplicar()">Multiplicar</button>
+            <button id="int" onclick="dividir()">Dividir</button>
+            <button id="int" onclick="potencia()">Potencia</button>
+            <button id="boolean" onclick="conjuncion()">Conjuncion</button>
+            <button id="boolean" onclick="disyuncion()">Disyuncion</button>
+            <button id="boolean" onclick="condicional()">Condicional</button>
+            <button id="boolean" onclick="negacion()">Negacion</button>
+        </div> 
         <script>
-            function reducir() {
-                document.getElementById("demo").style.fontSize = "10px";
-                document.getElementById("demo").style.color = "blue";
+            var elemento1 = true;
+            var elemento2 = true;
+            document.getElementById("demo").innerHTML = "Los elementos son "+elemento1+","+elemento2;
+            if ((number(elemento1)!=1||number(elemento1)!=0)&&(number(elemento2)!=1||number(elemento2)!=0)) {
+                    document.getElementById("boolean").style.diplay="none";
+                }
+            else{
+                    document.getElementById("int").style.diplay="none";
             }
-            function agrandar() {
-                document.getElementById("demo").style.fontSize = "40px";
-                document.getElementById("demo").style.color = "red";
+            function sumar() {
+                alert(elemento1 + elemento2);
+            }
+            function restar() {
+                alert(elemento1 - elemento2);
+            }
+            function multiplicar(){
+                alert(elemento1 * elemento2);
+            }
+            function dividir(){
+                alert(elemento1 / elemento2);
+            }
+            function potencia(){
+                alert(Math.pow(elemento1,elemento2));
+            }
+            function conjuncion(){
+                alert(elemento1 && elemento2);
+            }
+            function disyuncion(){
+                alert(elemento1 || elemento2);
+            }
+            function condicional(){
+                alert(!elemento1 || elemento2);
+            }
+            function negacion(){
+                alert((!elemento1)+","+(!elemento2))
             }
         </script>
-        <div>
-            <h2 id ="demo"></h2>
-            <button onclick="reducir()">Sumar</button>
-            <button onclick="agrandar()">Restar</button>
-            <button onclick="agrandar()">multiplicar</button>
-            <button onclick="agrandar()">Dividir</button>
-            <button onclick="agrandar()">Potencia</button>
-            <button onclick="agrandar()">Conjuncion</button>
-            <button onclick="agrandar()">Disyuncion</button>
-            <button onclick="agrandar()">Condicional</button>
-
-        </div> 
     </body>
 </html>
