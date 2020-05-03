@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    </head>
+    <body>
+        <div>
+            <h2 id ="demo">ESTE TEXTO CAMBIARA</h2>
+            <button onclick="reducir()">Reducir</button>
+            <button onclick="agrandar()">Agrandar</button>
+        </div> 
+        <script>
+            function reducir() {
+                document.getElementById("demo").style.fontSize = "10px";
+                document.getElementById("demo").style.color = "blue";
+            }
+            function agrandar() {
+                document.getElementById("demo").innerHTML = "40px";
+                document.getElementById("demo").style.color = "red";
+            }
+        </script>
+    </body>
+</html>
